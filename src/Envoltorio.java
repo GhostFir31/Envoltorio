@@ -23,7 +23,7 @@ public class Envoltorio {
 
             listaAleatorios.add(numeroGenerado);
 
-            System.out.print("|" + listaAleatorios.get(i)+"|");
+            System.out.print(" " + listaAleatorios.get(i)+" ");
 
         }
         System.out.println(" ");
@@ -31,22 +31,27 @@ public class Envoltorio {
     }
 
     public void numerosRepetidos() {
+        
+     
         int contador = 0;
 
         for (int i = 0; i < listaAleatorios.size(); i++) {
+            
+            contador=0;
 
-            contador = 0;
-
+        
             for (int j = 0; j < listaAleatorios.size(); j++) {
 
                 if (listaAleatorios.get(i) == listaAleatorios.get(j)) {
 
                     contador++;
+
                 }
                 
             }
-           if(contador>1)
+         
             System.out.println("El número " + listaAleatorios.get(i) + " se repite " + contador + " veces.");
+            
         }
 
     }
